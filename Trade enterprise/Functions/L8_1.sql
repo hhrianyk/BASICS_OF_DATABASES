@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` FUNCTION `L8_1`() RETURNS int
+    READS SQL DATA
+BEGIN
+RETURN (SELECT AVG(`Кількість`) FROM партія);
+END
